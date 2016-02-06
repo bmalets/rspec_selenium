@@ -38,10 +38,8 @@ class MainPage < SitePrism::Section
   element :wysiwyg, 						:xpath,"//*//li[37]/a"
 end
 
-
 class Main < SitePrism::Page
   set_url '/'
 	section  :main, MainPage, :xpath,"/html/body"
-
 end
 
