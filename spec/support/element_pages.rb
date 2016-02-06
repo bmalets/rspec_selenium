@@ -8,6 +8,10 @@ module ElementsPages
     def elements_page
       Main.new
     end  
+
+    def basicauth_page
+      BasicAuth.new
+    end
   end
 end
 
