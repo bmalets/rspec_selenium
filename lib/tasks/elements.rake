@@ -1,7 +1,7 @@
 require File.join( Rails.root, "config/initializers/app_config" )
 
 namespace :element do
-
+ENV['SERVER']   = AppConfig.servers
  desc "all test"
   task all: :environment do
     task('spec').clear
