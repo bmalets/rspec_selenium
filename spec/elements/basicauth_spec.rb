@@ -1,0 +1,1 @@
+basicauth_spec.rb
