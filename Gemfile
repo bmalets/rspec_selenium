@@ -53,7 +53,6 @@ group :development, :test do
   gem 'zonebie'
   gem 'wait_until'
   gem 'poltergeist', '~> 1.5.1'
-  gem 'capybara-webkit'
   gem 'chromedriver-helper'
   gem 'faker', '~> 1.5'
   gem 'gmail', '~> 0.6.0'
