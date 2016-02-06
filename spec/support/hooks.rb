@@ -1,7 +1,7 @@
 RSpec.configure do |config|
 
   config.before(:context, :admin) do
-    @page = MMPages::Navigation.new
+    @page = ElementsPages::Navigation.new
     @page.login_page.load
     
     page.driver.browser.manage.window.resize_to(1400,1000)
