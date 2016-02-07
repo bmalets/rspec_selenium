@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'basic Auth'  do
 
-	it 'Negative auth' do
+	it 'auth' do
 		@page = ElementsPages::Navigation.new
 
 		mainurl = ENV['SERVER']
