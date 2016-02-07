@@ -34,7 +34,23 @@ desc "basic auth"
       r_time = Time.now.strftime("%H-%M")
 
       t.pattern       = './spec/elements/basicauth_spec.rb'
-      t.rspec_opts    = "--format html --out reports/#{r_date}/#{r_time}_basicauth.html"
+      t.rspec_opts    = "--format html --out reports/#{r_date}/#{r_time}_basic_auth.html"
+      t.fail_on_error = false
+      t.verbose = false
+    end 
+    Rake::Task["spec"].execute 
+end
+
+desc "broken images"
+  task :broken_images => :environment do
+    task('spec').clear
+
+    RSpec::Core::RakeTask.new(:spec) do |t|
+      r_date = Time.now.strftime("%Y-%m-%d")
+      r_time = Time.now.strftime("%H-%M")
+
+      t.pattern       = './spec/elements/brokenimages_spec.rb'
+      t.rspec_opts    = "--format html --out reports/#{r_date}/#{r_time}_broken_images.html"
       t.fail_on_error = false
       t.verbose = false
     end 
