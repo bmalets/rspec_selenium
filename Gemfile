@@ -56,4 +56,5 @@ group :development, :test do
   gem 'chromedriver-helper'
   gem 'faker', '~> 1.5'
   gem 'gmail', '~> 0.6.0'
+  gem 'rest-client', '~> 1.8'
 end
