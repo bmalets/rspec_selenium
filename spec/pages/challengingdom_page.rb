@@ -39,5 +39,4 @@ class ChallengingDOM < SitePrism::Page
 		element :line10_delete, :xpath, "//tbody/tr[10]/td[7]/a[2]"
 
 	element :canvas,					:xpath, "//*[@id=\"canvas\"]"
-
 end
