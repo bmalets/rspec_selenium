@@ -16,6 +16,10 @@ module ElementsPages
     def brokenimages_page
       BrokenImages.new
     end
+
+    def challengingdom_page
+      BrokenImages.new
+    end
   end
 end
 
