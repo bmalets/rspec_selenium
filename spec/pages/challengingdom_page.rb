@@ -1,3 +1,3 @@
 class ChallengingDOM < SitePrism::Page
-	set_url '/'
+	set_url '/challenging_dom'
 end
