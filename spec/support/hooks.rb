@@ -15,9 +15,6 @@ RSpec.configure do |config|
     
     @page.login_page.login_button.click
     expect(@page.login_page.main_error.has_id_error_main?).to be false #check if present main error
-end
-
-  config.after do
   end
 
 end
