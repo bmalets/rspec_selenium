@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'basic Auth'  do
+describe 'Basic Auth'  do
 
 	it 'auth' do
 		@page = ElementsPages::Navigation.new
