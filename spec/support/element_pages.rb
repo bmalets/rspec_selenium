@@ -12,6 +12,10 @@ module ElementsPages
     def basicauth_page
       BasicAuth.new
     end
+
+    def brokenimages_page
+      BrokenImages.new
+    end
   end
 end
 
